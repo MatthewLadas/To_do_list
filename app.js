@@ -1,5 +1,5 @@
 let input = prompt('What would you like to do?'); 
-const todos = ['Add a Todo', 'List All Todos', 'Remove Specific Todo', 'Quit App']
+const todos = ['Buy a kitten', 'Buy cat litter'];
 
 
 while (input !== 'quit' && input !== 'q') {
@@ -9,6 +9,13 @@ while (input !== 'quit' && input !== 'q') {
             console.log(`${i}: ${todos[i]}`);
         }
         console.log('************************');
+    } else if (input === 'new') {
+        const newTodo = prompt('Ok, what is the new todo?');
+        todos.push(newTodo);
+        console.log(`Awesome! ${newTodo} has been added to the list.` );
+    } else if (input === 'delete') {
+        const index = prompt('Ok, enter an index to delete that entry.');
+        
     }
     input = prompt("What would you like to do?");
 }
