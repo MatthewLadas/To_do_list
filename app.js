@@ -1,5 +1,5 @@
 let input = prompt('What would you like to do?'); 
-const todos = ['Buy a kitten', 'Buy cat litter'];
+const todos = ['Buy a kitten', 'Buy cat food'];
 
 
 while (input !== 'quit' && input !== 'q') {
@@ -19,7 +19,7 @@ while (input !== 'quit' && input !== 'q') {
             const deleted = todos.splice(index, 1);
             console.log(`Great! ${deleted[0]} has been deleted!`);
         } else {
-            console.log('Unkown Index');
+            console.log('Unknown Index');
         }
     }
     input = prompt("What would you like to do?");
